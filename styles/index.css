@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Battambang", system-ui;
+}
+a {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+.main-container .side-bar {
+  width: 290px;
+  height: 100%;
+  padding: 5px;
+  background-color: rgb(194, 157, 196);
+  color: white;
+  float: left;
+}
+.main-container .side-bar .img {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(3, 2, 25);
+  margin-bottom: 5px;
+}
+.main-container .side-bar .img img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.main-container .side-bar .main-menu {
+  width: 100%;
+  height: calc(100% - 105px);
+}
+.main-container .side-bar .main-menu ul li {
+  padding: 13px;
+  font-size: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.main-container .side-bar .main-menu ul li a {
+  display: block;
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(17, 14, 14);
+}
+.main-container .side-bar .main-menu ul li i {
+  font-size: 17px;
+}
+.main-container .side-bar .main-menu ul li:hover {
+  background-color: rgb(223, 136, 212);
+  transform: translateX(5px);
+  color: black;
+}
+.main-container .side-bar .main-menu ul li:hover a {
+  color: black;
+}
+.main-container .top-menu {
+  width: calc(100% - 290px);
+  height: 65px;
+  padding: 7px 10px;
+  float: left;
+  background-color: #efaceb;
+}
+.main-container .top-menu .header {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 178, 228);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+.main-container .top-menu .header .title {
+  font-size: 23px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #cccadd, #d7bfdd, #b68fb6);
+  
+}
+.main-container .top-menu .header select {
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(6, 4, 4);
+  box-shadow: 0 0 15px rgb(162, 106, 167);
+  border: 2px solid rgb(199, 168, 194);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    50deg,
+    rgb(196, 137, 181)
+  );
+  background-size: 300%;
+  animation: glowing 1.5s linear infinite;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300% 0;
+  }
+}
+
+.container {
+  width: calc(100% - 290px);
+  height: calc(100% - 65px);
+  padding: 10px;
+  background-color: #f7f5f5;
+  overflow-y: scroll;
+  float: left;
+}
+.container .box {
+  width: 100%;
+  background-color: rgb(210, 148, 202);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.container .box .left {
+  width: 100%;
+  height: auto;
+}
+.des {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.des span {
+  font-size: 17px;
+}
+.img-des {
+  width: 100%;
+  height: auto;
+}
+.img-des img {
+  width: 100%;
+  object-fit: cover;
+}
+.container .box .right {
+  width: 100%;
+  height: auto;
+}
+#setup-email {
+  display: none;
+}
+.active {
+  background-color: aliceblue;
+  color: black;
+}
+.test {
+  color: black !important;
+}
