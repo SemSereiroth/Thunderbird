@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thunderbird Interface</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -16,33 +16,29 @@
       <!-- Sidebar -->
       <div class="side-bar">
         <div class="img">
-          <img src="./img/Thunderbird_2023_icon.png" alt="Thunderbird Logo" />
+          <img src="../img/Thunderbird_2023_icon.png" alt="" />
         </div>
         <div class="main-menu">
           <ul>
             <li data-translate="sidebar1" id="download">
               <i class="fa-solid fa-download"></i>
               <a
-                href="index.html"
+                href="../index.html"
                 class="translation-text"
                 id="download-text"
-              >Download</a>
+              ></a>
             </li>
             <li data-translate="sidebar2" id="email">
               <i class="fa-solid fa-envelope"></i>
-              <a
-                href="./pages/email.html"
-                class="translation-text"
-                id="email-text"
-              >Email</a>
+              <a href="email.html" class="translation-text" id="email-text"></a>
             </li>
             <li data-translate="sidebar3" id="changepass">
               <i class="fa-solid fa-key"></i>
               <a
-                href="./pages/changepass.html"
+                href="../pages/changepass.html"
                 class="translation-text"
                 id="changepass-text"
-              >Change Password</a>
+              ></a>
             </li>
           </ul>
         </div>
@@ -53,10 +49,10 @@
         <div class="header">
           <div class="title" data-translate="title">
             <i class="fa-brands fa-firefox-browser"></i>
-            <span class="translation-text">Thunderbird Interface</span>
+            <span class="translation-text"></span>
           </div>
           <div class="lang">
-            <select name="language" id="switchlang">
+            <select name="" id="switchlang">
               <option value="km" style="color: black">ខ្មែរ</option>
               <option value="en" style="color: black">English</option>
             </select>
@@ -66,55 +62,45 @@
 
       <!-- Main content -->
       <div class="container" id="download-content" data-aos="fade-up">
+        <!-- Box 1 -->
         <div class="box">
           <div class="left">
             <div class="des">
-              <span data-translate="download1">Download and Install Thunderbird</span>
+              <span data-translate="changepass1"></span>
             </div>
             <div class="img-des">
-              <img src="./img/download1.png" alt="Download Step 1" />
+              <img src="../img/changepass1.png" alt="" />
             </div>
           </div>
           <div class="right">
-            <div class="des" data-translate="download2">Step-by-step instructions</div>
+            <div class="des" data-translate="changepass2"></div>
             <div class="img-des">
-              <img src="./img/download2.png" alt="Download Step 2" />
+              <img src="../img/changepass2.png" alt="" />
             </div>
           </div>
         </div>
 
+        <!-- Box 2 (corrected) -->
         <div class="box">
           <div class="left">
             <div class="des">
-              <span data-translate="download3">Configure your email settings</span>
+              <span data-translate="changepass3"></span>
             </div>
             <div class="img-des">
-              <img src="./img/download3.png" alt="Download Step 3" />
+              <img src="../img/changepass3.png" alt="" />
             </div>
           </div>
           <div class="right">
-            <div class="des" data-translate="download4">Advanced configurations</div>
-            <div class="img-des">
-              <img src="./img/download4.png" alt="Download Step 4" />
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="left">
-            <div class="des">
-              <span data-translate="download5">Troubleshooting common issues</span>
-            </div>
-            <div class="img-des">
-              <img src="./img/download5.png" alt="Download Step 5" />
-            </div>
+            <!-- Empty right section to keep layout balanced -->
+            <div class="des"></div>
+            <div class="img-des"></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Scripts -->
-    <script src="./js/translate.js"></script>
+    <script src="../js/translate.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
